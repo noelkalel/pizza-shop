@@ -37,7 +37,7 @@ public function dollarTotal($decimals = null, $decimalPoint = null, $thousandSep
     }, 0);
 
     return $this->numberFormat($total, $decimals, $decimalPoint, $thousandSeperator);    
-}
+
 
 public function dollarTax($decimals = null, $decimalPoint = null, $thousandSeperator = null){
     $content = $this->getContent();
@@ -50,7 +50,7 @@ public function dollarTax($decimals = null, $decimalPoint = null, $thousandSeper
     }, 0);
 
     return $this->numberFormat($dollarTax, $decimals, $decimalPoint, $thousandSeperator);
-}
+
 
 public function dollarSubtotal($decimals = null, $decimalPoint = null, $thousandSeperator = null){
     $content = $this->getContent();
@@ -63,4 +63,4 @@ public function dollarSubtotal($decimals = null, $decimalPoint = null, $thousand
     }, 0);
 
     return $this->numberFormat($dollarSubtotal, $decimals, $decimalPoint, $thousandSeperator);
-}
+
